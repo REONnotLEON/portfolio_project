@@ -1,0 +1,95 @@
+*{
+    border: 1px solid red;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+}
+
+main{
+    padding: 2%;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: hsl(0, 0%, 90%);
+    border-bottom: 5px solid hsl(0, 0%, 30%);
+}
+
+h1{
+    font-family: "Black Ops One", sans-serif;
+    font-size: 4rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+nav{
+    width: 45%;
+}
+
+nav ul{
+    font-size: 30px;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right:3rem;
+}
+
+nav ul li a{
+    color: black;
+}
+
+/*about-me section*/
+
+#about-me{
+    border: 3px solid black ;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#about-me h2{
+    margin: 0px;
+}
+
+#my-face{
+    display: inline-block;
+    width: 250px;
+}
+
+/*project section*/
+
+.projects-container h3{
+    margin-top: 0px;
+    font-size: 1.2rem;
+}
+
+.projects-container a{
+    text-decoration: none;
+}
+
+/*skills section*/
+
+.skills-container i{
+    display: inline-flex;
+    justify-content: space-around;
+    width: auto;
+}
+
+/* contact */
+
+
+/* footer */
+
+footer p{
+    text-align: center;
+    font-size: 16px;
+    color: hsl(0, 0, 80%);
+}
