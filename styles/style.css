@@ -1,5 +1,5 @@
 *{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body{
@@ -10,6 +10,13 @@ body{
 
 main{
     padding: 2%;
+}
+
+/*grid*/
+
+.grid{
+    display: grid;
+    grid-template: 700px 170px 1fr / 1fr 200px;
 }
 
 /* header */
@@ -59,12 +66,16 @@ nav ul li a{
     margin: 0px;
 }
 
+
 #my-face{
-    display: inline-block;
     width: 250px;
 }
 
 /*project section*/
+
+#projects{
+    grid-area: 3 / 1 / 4 / 2;
+}
 
 .projects-container h3{
     margin-top: 0px;
@@ -84,7 +95,10 @@ nav ul li a{
 }
 
 /* contact */
-
+#contact{
+    grid-area: 1 / 2 / 2 / span 1;
+    padding-left: 20px;
+}
 
 /* footer */
 
