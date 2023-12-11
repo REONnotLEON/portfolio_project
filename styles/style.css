@@ -90,24 +90,25 @@ nav ul li a{
     color: black;
 }
 
-/*about-me section*/
-
-#about-me{
+#about-me {
     border: 3px solid black ;
     border-radius: 20px;
     padding: 10px;
-    height: auto;
+    overflow: auto;
+    box-sizing: border-box;
 }
 
-.p-container{
+.p-container {
     display: flex;
-    padding-left: 20px;
+    gap: 20px; 
 }
 
-.p-container img{
+.p-container img {
+    flex-shrink: 0;
     max-width: 30%;
     height: auto;
     margin-left: 10px;
+    object-fit: cover; 
 }
 
 /* contact */
@@ -153,11 +154,6 @@ nav ul li a{
     text-decoration: none;
 }
 
-.projects-container #see-less{
-    display: none;
-}
-
-
 /* footer */
 
 footer p{
@@ -189,4 +185,19 @@ footer p{
    nav{
     width: 100%;
    }
+   main{
+    margin-top: 50px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+    .p-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .p-container img {
+        max-width: 50%;
+        margin-left: 0; 
+    }
 }

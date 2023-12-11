@@ -4,6 +4,7 @@ let showMore = () => {
     for (let i = 0; i < moreProjects.length; i++){
         moreProjects[i].style.display = "block";
     }
+    seeMore.style.display = 'none';
 }
 
 seeMore.onclick = showMore;
